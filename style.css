@@ -15,7 +15,8 @@
 	color: #1B3409;
 	display: flex;
 	font-size: 0.8em;
-	justify-content: center;
+	/*justify-content: center;*/
+	justify-content: left;
 }
 .header__title {
 	text-align: center;
