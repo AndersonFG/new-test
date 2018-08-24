@@ -1,0 +1,213 @@
+/*css RESET*/
+* {
+	border: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+}
+[class*="__btn"] {
+	cursor: pointer;
+}
+
+/*css HEADER*/
+.header {
+	background-color: #9BD770;
+	color: #1B3409;
+	display: flex;
+	font-size: 0.8em;
+	justify-content: center;
+}
+.header__title {
+	text-align: center;
+}
+.nav {
+	margin-top: 10px;
+	background-color: #EBF7E3; 
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+/*css NAV*/
+.nav__li {
+	display: inline;
+
+}
+.nav__li:nth-child(1) {
+    margin-right: 5px;
+}
+.nav__li:nth-child(2) {
+    margin-left: 5px;
+}
+.nav__a{
+	color:#1B3409;
+}
+.nav__a:hover {
+	color: #4C8325;
+	text-decoration: underline;
+}
+
+
+/*css ACCOUNTS*/
+.accounts {
+	background-color: #EBF7E3;
+	margin-top: 10px;
+	overflow-x: scroll;
+}
+.accounts__table {
+	border: 0;
+}
+.accounts__header-line {
+	background-color: #9BD770;
+}
+.accounts__cells-name {
+	padding: 15px 30px;
+	color: 	#1B3409;
+}
+.accounts__informartion-cells{
+	padding: 10px 25px;
+}
+
+[class*="accounts__btn"] {
+	/*cursor: pointer;*/
+	padding: 10px 15px;
+	border-radius: 5px;
+	color: #fff;
+}
+.accounts__btn-negative {
+	background-color: #ffad33;
+	font-weight: bold;
+}
+.accounts__btn-edit {
+	background-color: #33bbff;
+	font-weight: bold;
+}
+.accounts__btn-delete {
+	background-color: #ff3333;
+	font-weight: bold;
+}
+
+/*css RECIPES*/
+.recipes {
+	background-color: #EBF7E3;
+	margin-top: 10px;
+}
+.recipes__title {
+	display: block;
+	background-color: #9BD770;
+	margin-top: 0;
+	/*height: 50px;*/
+	text-align: center;
+	color: #1B3409;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.recipes__name {
+	color: #1B3409;
+	padding: 10px 15px;
+	background-color: #9BD770; 
+}
+.recipes__table { 
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.recipes__information-value{
+	text-align: right;
+}
+.recipes__information-name{
+	text-align: left;
+}
+.footer {
+	margin-top: 10px;
+	background-color: #1B3409;
+	height: 80px;
+}
+
+/*css MODAL*/
+.insertion__account, .insertion__source {
+	display: none;
+}
+.insertion__account:target, .insertion__source:target  {	
+  	display: block;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center; 
+  	height: 100%;
+  	width: 100%;
+  	background-color: rgba(0, 0, 0, 0.8);
+  	position: absolute;
+  	left: 0;
+  	top: 0;
+}
+
+.insertion__box {
+	background-color: #EBF7E3;
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+}
+.insertion__header {
+	background-color: #375F1B;
+}
+.insertion__close {
+	color: #fff;
+	float: right;
+	margin-right: 5%;
+	margin-top: 2px;
+}
+.insertion__body {
+	margin-top: 10px;
+}
+.insertion__title {
+	text-align: center;
+	color: #fff;	
+}
+.insertion__label, .insertion__input {
+	font-weight: 600;
+	margin-left: 5%;
+}
+.insertion__label {
+	margin-bottom: 5px;
+}
+.insertion__input {
+	display: block;
+	width: 90%;
+	height:  25px;
+	margin-bottom:  10px;
+	background-color: #9BD770;
+	color: white;
+	letter-spacing: 1px;
+}
+.insertion__btn {
+	margin-left: 5%;
+	background-color: #375F1B;
+	padding: 5px 10px;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+.insertion__btn--hover:hover {
+	background-color: #4C8325;
+
+}
+@media (min-width: 700px) {
+	.container {
+		display: flex;
+		flex-direction: row;
+	}
+	.accounts {
+		width: 70%;
+		margin-right: 10px;
+	}
+	.recipes {
+		margin-top: 10px;
+		width: 29%;
+	}
+	.insertion__box {
+		width: 650px;
+	}
+}
+

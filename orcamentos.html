@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,800,800i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<script src="code.js" async></script>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header__title">Budget of the month</h1>
+		</header>
+		<nav class="nav">
+			<ul class="nav__ul">
+				<li class="nav__li"> 
+					<a class="nav__a" href="#insertion__account"> 
+						New	accont
+					</a>
+				</li>
+				<li class="nav__li">
+					<a class="nav__a" href="#insertion__source">
+						New source
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="container">
+			<div class="insertion__account" id="insertion__account">
+				<div class="insertion__box">
+					<div class="insertion__header">
+						<a href=""><i class="insertion__close fas fa-times" id="close"title="close modal"></i></a>
+						<h2 class="insertion__title">Register account</h2>
+					</div>
+					<div class="insertion__body">
+						<form class="insertion__form" name="formulario">
+							<label class="insertion__label" for="account">Account name:</label>
+							<input class="insertion__input" type="text" name="nome" id="account" placeholder="Ex:Water">
+							<label class="insertion__label" for="maturity">Maturity date:</label>
+							<input class="insertion__input" type="text" name="maturity" id="maturity" placeholder="dd/mm/yyyy">
+							<label class="insertion__label" for="accountValue">Value:</label>
+							<input class="insertion__input" type="text" name="accountValue" id="accountValue" placeholder="Ex:120.22">
+							<button class="insertion__btn insertion__btn--hover" id="btn" onclick="return analisaInput()" type="submit">Cadastrar</button>	
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="insertion__source" id="insertion__source">
+				<div class="insertion__box">
+					<div class="insertion__header">
+						<a href=""><i class="insertion__close fas fa-times" id="close"title="close modal"></i></a>
+						<h2 class="insertion__title">Register source</h2>
+					</div>
+					<div class="insertion__body">
+						<form class="insertion__form">
+							<label class="insertion__label" for="account">Source name:</label>
+							<input class="insertion__input" type="text" id="account">
+							<label class="insertion__label" for="accountValue">Value:</label>
+							<input class="insertion__input" type="text" id="acconutValue">
+							<button class="insertion__btn insertion__btn--hover"  type="submit">Cadastrar</button>	
+						</form>
+					</div>
+				</div>
+			</div>
+			<section class="accounts">
+				<table class="accounts__table">
+					<tr class="accounts__header-line">
+						<th class="accounts__cells-name">Accounts</th>
+						<th class="accounts__cells-name">Maturitys</th>
+						<th class="accounts__cells-name">Values</th>
+						<th class="accounts__cells-name">Situation</th>
+						<th class="accounts__cells-name">Edit</th>
+						<th class="accounts__cells-name">Delete</th>
+					</tr>
+					<tr class="accounts__information">
+						<td class="accounts__informartion-cells">Watersdfdddddddddddddddddddddddddddddddddddddd</td>
+						<td class="accounts__informartion-cells">10/08/18</td>
+						<td class="accounts__informartion-cells">130,00</td>
+						<td class="accounts__informartion-cells"><button class="accounts__btn-negative">No</button></td>
+						<td class="accounts__informartion-cells"><button class="accounts__btn-edit">Edit</button></td>
+						<td class="accounts__informartion-cells"><button class="accounts__btn-delete">Delete</button></td>
+					</tr>
+				</table>
+			</section>
+
+
+			<article class="recipes">
+				<h2 class="recipes__title">Recipes</h2>
+				<table class="recipes__table">
+					<tr class="recipes__header-line">
+						<th class="recipes__name">Source</th>
+						<th class="recipes__name">Value</th>
+					</tr>
+					<tr class="recipes__information">
+						<td class="recipes__information-name">Totalcor</td>
+						<td class="recipes__information-value">3.000,00</td>
+					</tr>
+					<tr class="recipes__information">
+						<td class="recipes__information-name">Freelancer</td>
+						<td class="recipes__information-value">500,00</td>
+					</tr>
+					<tr class="recipes__information">
+						<td class="recipes__information-name">Total</td>
+						<td class="recipes__information-value">3.500,00</td>
+					</tr>
+				</table>
+			</article>
+		</div>
+
+		<footer class="footer">
+			
+		</footer>
+	</body>
+</html>
